@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cor1: #8E2A2A;
+    --cor2: #F5CD00;
+    --cor3: #000000;
+    --cor4: #ffffff;
+    --cor5: #c0c0c0;
+    --corulf: #35303D;
+
+    --font-padrao: 'Roboto slab', serif;
+    --font-auxiliar: 'Roboto slab', serif;
+    --font-texto: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*BASICO*/
+h1 {
+    color: var(--cor1);
+    font-family: var(--font-padrao);
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h2 { 
+    color: var(--cor3);
+    font-family: var(--font-padrao);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    color: var(--cor3);
+    font-family: var(--font-texto);
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 32px;
+}
+
+li {
+    list-style: none;
+}
+
+hr {
+    color: var(--cor3);
+    width: 200px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+body {
+    min-width: 300px;
+    max-width: 1920px;
+}
+
+/*HEADER e MENU*/
+header {
+    background-color: var(--cor1);
+    box-sizing: border-box;
+    width: 100%;
+    height: 15vh;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    text-decoration: none;
+}
+
+#logo{
+    height: 100%;
+    display: block;
+    margin: 0 20px;
+}
+
+#menu {
+    color: var(--cor2);
+    font-family: var(--font-padrao);
+    font-size: 1em;
+    display: flex;
+    gap: 5rem;
+    width: auto;
+    height: auto;
+    position: absolute;
+    display: inline-block;
+    right: 50px;
+    text-decoration: none;
+}
+
+@midia {
+    
+}
+
+#menu ul li a {
+    color: var(--cor2);
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+#menu a:hover {
+    color: var(--cor4);
+    text-decoration: overline;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+picture#carrossel img {
+    width: 100%;
+}
+
+/*SOBRE*/
+section#sobre {
+    background-color: var(--cor2);
+    text-align: center;
+    padding: 50px 100px;
+}
+.portugues {
+    color: var(--cor1);
+    font-family: var(--font-padrao);
+    font-size: 1.5em;
+    font-weight: 500;
+} 
+
+.ingles {
+    font-family: var(--font-texto);
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+/*VIDEOS*/
+section#videos {
+    text-align: center;
+    padding: 50px 0PX;
+}
+
+iframe {
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/*MEMBROS*/
+section#membros {
+    background-color: var(--cor2);
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.membro {
+    display: inline-block;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 15PX;
+}
+
+.membro h2 h3 p {
+    width: 40px;
+}
+
+.membro a {
+    color: var(--cor1);
+    font-family: var(--font-texto);
+    font-size: 1em;
+    font-weight: 600;
+
+}
+
+.membro a:hover {
+    color: var(--cor4);
+}
+
+/*EVENTOS*/
+section#eventos {
+    text-align: center;
+    padding: 50px 50px;
+}
+
+.mes {
+    width: 330px;
+    height: 150px;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.mes p {
+    color: var(--cor3);
+    font-family: var(--font-texto);
+    font-size: .8em;
+    font-weight: 600;
+}
+
+/*TREINOS*/
+section#treinos {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 50px;
+    background-image: url(imgs/treinos.png);
+}
+
+#treinos h2 {
+    font-family: var(--font-padrao);
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+#treinos h3 {
+    color: var(--corulf);
+    font-family: var(--font-padrao);
+    font-size: 2.5em;
+    font-weight: 600;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+div#whatsapp {
+    margin: auto;
+    text-align: center;
+}
+
+#whatsapp img {
+    width: 30px;
+    display: inline;
+    margin: 0 15px;
+}
+
+#whatsapp p {
+    font-family: var(--font-texto);
+    font-size: 30px;
+    font-weight: 500; 
+    display: inline;
+}
+
+/*LINKS*/
+section#links {
+    background-color: var(--cor5);
+    width: auto;
+    height: 350px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#links div {
+    width: 180px;
+    height: 140px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+#links h1 {
+    display: flex;
+}
+
+.midias > h2 {
+    color: var(--cor1);
+}
+
+#links a {
+    color: var(--cor3);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600; 
+}
+
+#links a:hover {
+    color: var(--cor4);
+}
+
+.midias {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+footer > p {
+    width: 100%;
+    background-color: var(--cor3);
+    color: var(--cor5);
+    text-align: center;
+}
